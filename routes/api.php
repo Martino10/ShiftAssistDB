@@ -16,4 +16,5 @@ use App\Http\Controllers\ItemsController;
 |
 */
 
-Route::get('/itemdetection', [ItemsController::class, 'load']);
+Route::get('/itemdetection/{s}', [ItemsController::class, 'getItems']);
+Route::get('/itemdetection', [ItemsController::class, 'getTableLength']);
